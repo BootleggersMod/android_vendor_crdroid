@@ -5,8 +5,8 @@ PRODUCT_VERSION_MINOR = 1.2
 # Increase CR Version with each major release.
 CR_VERSION := 3.0
 
-LINEAGE_VERSION := crDroidAndroid-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-v$(CR_VERSION)
-LINEAGE_DISPLAY_VERSION := crDroidAndroid-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-v$(CR_VERSION)
+LINEAGE_VERSION := crDroidShishult-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-v$(CR_VERSION)
+LINEAGE_DISPLAY_VERSION := crDroidShishult-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-v$(CR_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crdroid.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
@@ -27,9 +27,7 @@ PRODUCT_PACKAGES += \
     ThemeInterfacer \
     OmniStyle \
     OmniJaws \
-    crDroidWallpapers \
-    crDroidFileManager \
-    crDroidMusic
+    crDroidWallpapers
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
